@@ -1,0 +1,865 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.wapforum.org/DTD/xhtml-mobile12.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+
+<HEAD>
+
+  <title>검색어결산</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <meta name="theme-color" content="#693bbb">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <meta name="description" content=" 검색어 비교" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+  <meta name="keywords" content="@ 검색어 순위기록, 인기검색어 기록,연관 검색어,인기검색어 비교,네이버 급상승,다음 실시간이슈,구글 인기 급상승 검색어,소셜이슈,음악순위 기록" />
+
+  <meta name="google-site-verification" content="xsZt-mVk273QNrUTR4gsvLpoVULF1XS7b64sAcUvlaY" />
+
+  <meta name="naver-site-verification" content="103e23ddbc1e24cec1f9565bca8098367ee1c090" />
+
+  
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="검색어결산">
+
+  <meta property="og:description" content="@ 검색어 순위기록, 인기검색어 기록,연관 검색어,인기검색어 비교">
+
+  <meta property="og:image" content="http://rank.ezme.net/css/images/ezme.png">
+
+  <meta property="og:url" content="http://rank.ezme.net">
+
+  <meta name="twitter:image:src" content="css/images/ezme.png">
+
+  
+
+  <link rel="canonical" href="http://rank.ezme.net/">
+
+  <link rel="apple-touch-icon" href="css/images/ezme.png">
+
+  <link rel="shortcut icon" href="css/images/favicon.ico" />
+
+  <link rel="icon" type="image/png" href="css/images/ezme.png" />
+
+
+
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <STYLE TYPE="text/css">@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic);</STYLE>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/material-design-lite@1.3.0/dist/material.deep_purple-indigo.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/rank.css?v=1" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/jqplot@1.0.9/jquery.jqplot.min.css" />
+
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/excite-bike/jquery-ui.css">
+
+
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script defer src="//cdn.jsdelivr.net/npm/material-design-lite@1.3.0/material.min.js"></script>
+
+  <script type="text/javascript" src="js/rank.js" charset="UTF-8"></script> 
+
+  <script type="text/javascript" src="js/jqcloud.min.js"></script>
+
+    <script src='//www.google.com/recaptcha/api.js'></script>
+
+    
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <script>
+
+       (adsbygoogle = window.adsbygoogle || []).push({
+
+            google_ad_client: "ca-pub-5603676957814676",
+
+            enable_page_level_ads: true
+
+       });
+
+  </script>
+
+  </HEAD>
+
+
+
+
+
+
+
+<BODY>
+
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+     <header class="mdl-layout__header">
+
+       <div class="mdl-layout__header-row">
+
+         <span class="mdl-layout-title a" onclick="location.href='http://ezme.net'">ezme.net</span>
+
+         <span class="mdl-layout-title a" onclick="location.href='/'">&nbsp;#순위기록</span>
+
+         <div class="mdl-layout-spacer"></div>
+
+         <nav class="mdl-navigation mdl-layout--large-screen-only">
+
+          <a href="./cloud" id="menu5" class="mdl-navigation__link "><i class="material-icons">filter_drama</i> 검색어 구름</a>
+
+          <div class="mdl-tooltip" data-mdl-for="menu5">검색어 구름</div>
+
+
+
+          <a href="./diff" id="menu4" class="mdl-navigation__link "><i class="material-icons">leaderboard</i> 비교</a>
+
+          <div class="mdl-tooltip" data-mdl-for="menu4">검색어 기록비교</div>
+
+
+
+          <a href="./nate" id="menu1" class="mdl-navigation__link ">네이트</a>
+
+          <div class="mdl-tooltip" data-mdl-for="menu1"> 기록</div>
+
+
+
+          <a href="./google" id="menu3" class="mdl-navigation__link ">구글</a>
+
+          <div class="mdl-tooltip" data-mdl-for="menu3"> 기록</div>
+
+
+
+          <a href="./zum" id="menu1a" class="mdl-navigation__link ">줌</a>
+
+          <div class="mdl-tooltip" data-mdl-for="menu1a"> 기록</div>
+
+
+
+          <a href="./naver" id="menu2" class="mdl-navigation__link ">네이버</a>
+
+          <div class="mdl-tooltip" data-mdl-for="menu2"> 기록</div>
+
+
+
+          <a href="./trand" id="menu6" class="mdl-navigation__link  is-active"><i class="material-icons">track_changes</i> 검색어결산</a>
+
+          <div class="mdl-tooltip" data-mdl-for="menu6">검색어결산(인기 검색어 결산)</div>
+
+         </nav>
+
+       </div>
+
+     </header>
+
+     <div class="mdl-layout__drawer">
+
+       <span class="mdl-layout-title a"><img src="css/images/ezme.gif" />순위기록</span>
+
+       <nav class="mdl-navigation">
+
+          
+
+          <a href="./nate" class="mdl-navigation__link "><i class="material-icons recmd5">trending_up</i> 네이트</a>
+
+          <a href="./google" class="mdl-navigation__link "><i class="material-icons recmd3">trending_up</i> 구글</a>
+
+          <a href="./zum" class="mdl-navigation__link "><i class="material-icons recmd4">trending_up</i> 줌</a>
+
+          <a href="./naver" class="mdl-navigation__link "><i class="material-icons recmd2">trending_up</i> 네이버</a>
+
+          <a href="./daum" class="mdl-navigation__link "><i class="material-icons recmd1">trending_up</i> 다음</a>
+
+
+
+          <a href="./diff" class="mdl-navigation__link "><i class="material-icons diff">pie_chart</i> 검색어 순위비교</a>
+
+
+
+          <a href="./cloud" class="mdl-navigation__link "><i class="material-icons cloud">filter_drama</i> 검색어 구름</a>
+
+
+
+          <!--<a href="./issue" class="mdl-navigation__link "><i class="material-icons issue">library_books</i> 뉴스이슈</a>-->
+
+
+
+          <a href="./music" class="mdl-navigation__link "><i class="material-icons music">music_note</i> 음악</a>
+
+
+
+          <a href="./trand" class="mdl-navigation__link  is-active"><i class="material-icons trand">track_changes</i> 검색어 결산</a>
+
+       </nav>
+
+     </div>
+
+
+
+<main class="mdl-layout__content">
+
+  <div class="page-content">
+
+
+
+
+
+
+
+  <div class="mdl-grid" rel="">
+
+    <h3 class="trand">검색어결산 <small>  </small></h3>
+
+  </div>
+
+
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- 검색어순위 상단배너 -->
+
+    <ins class="adsbygoogle"
+
+         style="display:block"
+
+         data-ad-client="ca-pub-5603676957814676"
+
+         data-ad-slot="1152956129"
+
+         data-ad-format="auto"></ins>
+
+    <script>
+
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
+    </script>
+
+
+
+  
+
+  
+
+  <div class="mdl-grid">
+
+                        
+
+    
+
+          <form class="form-inline" action="./">
+
+        <input name="mode" value="trand" type="hidden" />
+
+        <input name="7days" value="2022-01-23" type="text" class="datetime_d input-small" readonly="readonly" />
+
+        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons md-18">insert_invitation</i> +7일 조회</button>
+
+        &nbsp;&nbsp;
+
+     </form>
+
+      <form class="form-inline" action="./">
+
+        <input name="mode" value="trand" type="hidden" />
+
+        <input name="ym" value="2021-12" type="text" class="datetime_m" readonly="readonly" />
+
+        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons md-18">insert_invitation</i> 월 조회</button>
+
+
+
+        &nbsp;&nbsp;&nbsp;<span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+                <span class='mdl-chip__contact mdl-color--purple mdl-color-text--white'>Y</span>
+
+                <span class='mdl-chip__text'>2015년</span>
+
+                <a href='./?mode=trand&yy=2015' class='mdl-chip__action'><i class='material-icons'>search</i></a>
+
+            </span>&nbsp;&nbsp;&nbsp;<span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+                <span class='mdl-chip__contact mdl-color--purple mdl-color-text--white'>Y</span>
+
+                <span class='mdl-chip__text'>2016년</span>
+
+                <a href='./?mode=trand&yy=2016' class='mdl-chip__action'><i class='material-icons'>search</i></a>
+
+            </span>&nbsp;&nbsp;&nbsp;<span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+                <span class='mdl-chip__contact mdl-color--purple mdl-color-text--white'>Y</span>
+
+                <span class='mdl-chip__text'>2017년</span>
+
+                <a href='./?mode=trand&yy=2017' class='mdl-chip__action'><i class='material-icons'>search</i></a>
+
+            </span>&nbsp;&nbsp;&nbsp;<span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+                <span class='mdl-chip__contact mdl-color--purple mdl-color-text--white'>Y</span>
+
+                <span class='mdl-chip__text'>2018년</span>
+
+                <a href='./?mode=trand&yy=2018' class='mdl-chip__action'><i class='material-icons'>search</i></a>
+
+            </span>&nbsp;&nbsp;&nbsp;<span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+                <span class='mdl-chip__contact mdl-color--purple mdl-color-text--white'>Y</span>
+
+                <span class='mdl-chip__text'>2019년</span>
+
+                <a href='./?mode=trand&yy=2019' class='mdl-chip__action'><i class='material-icons'>search</i></a>
+
+            </span>&nbsp;&nbsp;&nbsp;<span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+                <span class='mdl-chip__contact mdl-color--purple mdl-color-text--white'>Y</span>
+
+                <span class='mdl-chip__text'>2020년</span>
+
+                <a href='./?mode=trand&yy=2020' class='mdl-chip__action'><i class='material-icons'>search</i></a>
+
+            </span>&nbsp;&nbsp;&nbsp;<span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+                <span class='mdl-chip__contact mdl-color--purple mdl-color-text--white'>Y</span>
+
+                <span class='mdl-chip__text'>2021년</span>
+
+                <a href='./?mode=trand&yy=2021' class='mdl-chip__action'><i class='material-icons'>search</i></a>
+
+            </span>      </form>
+
+    
+
+    
+
+    
+
+  </div>
+
+
+
+   
+
+
+
+            
+
+      
+
+            
+
+      
+
+
+
+      
+
+        <div class="mdl-grid">
+
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet">
+
+          <span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+            <span class='mdl-chip__contact mdl-color--red mdl-color-text--white'>G</span>
+
+            <span class='mdl-chip__text'>2021-12 구글 426&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+          </span>
+
+          <ul class="demo-list-icon mdl-list">
+
+            <li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--red'>looks_one</i> 맨유&nbsp;<span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+                  <img class='mdl-chip__contact' src='https://search1.kakaocdn.net/argon/130x130_85_c/Bn1k2v7feTF'></img></span></li></span><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--red'>looks_two</i> 토트넘</li></span>
+
+              <li class='mdl-list__item'>
+              <span class='mdl-list__item-primary-content'>
+              <i class='material-icons mdl-color-text--red'>looks_3</i> 조동연
+              </li>
+              </span>
+              
+              <li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--red'>looks_4</i> 이준석</li></span><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--red'>looks_5</i> 아스날</li></span><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--red'>filter_6</i> BTS</li></span><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--red'>filter_7</i> CGV, 정국</li></span><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--red'>filter_8</i> 이하늬</li></span><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--red'>filter_9</i> 미세먼지</li></span><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--red'>filter_9_plus</i> 리버풀</li></span>          </ul> 
+
+        </div>
+
+        <div class="mdl-cell mdl-cell--9-col mdl-cell--9-col-tablet"><div id="cloud_g"></div></div>
+
+      </div>
+
+
+
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+      <!-- 검색어순위 상세페이지 -->
+
+      <ins class="adsbygoogle"
+
+           style="display:block"
+
+           data-ad-client="ca-pub-5603676957814676"
+
+           data-ad-slot="1402436129"
+
+           data-ad-format="auto"></ins>
+
+      <script>
+
+      (adsbygoogle = window.adsbygoogle || []).push({});
+
+      </script>
+
+      <hr />
+
+      <div class="mdl-grid">
+
+        <div class="mdl-cell mdl-cell--9-col mdl-cell--9-col-tablet"><div id="cloud_z"></div></div>
+
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet">
+
+          <span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+            <span class='mdl-chip__contact mdl-color--indigo mdl-color-text--white'>Z</span>
+
+            <span class='mdl-chip__text'>2021-12 ZUM 131&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+          </span>
+
+          <ul class="demo-list-icon mdl-list">
+
+            <li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>looks_one</i> 임영웅&nbsp;<span class='mdl-chip mdl-chip--contact mdl-chip--deletable'>
+
+                  <img class='mdl-chip__contact' src='https://search2.kakaocdn.net/argon/130x130_85_c/GBPQ3JOSjlW'></img></span></span></li><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>looks_two</i> 김건희</span></li><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>looks_3</i> 옷소매 붉은 끝동</span></li><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>looks_4</i> 이준석</span></li><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>looks_5</i> 유재석</span></li><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>filter_6</i> 설강화</span></li><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>filter_7</i> 손흥민</span></li><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>filter_8</i> 조동연</span></li><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>filter_9</i> 오미크론</span></li><li class='mdl-list__item'>
+
+              <span class='mdl-list__item-primary-content'>
+
+              <i class='material-icons mdl-color-text--indigo'>filter_9_plus</i> 신사와 아가씨</span></li>          </ul> 
+
+        </div>
+
+      </div>
+
+
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+      <!-- 검색어순위 상세페이지 -->
+
+      <ins class="adsbygoogle"
+
+           style="display:block"
+
+           data-ad-client="ca-pub-5603676957814676"
+
+           data-ad-slot="1402436129"
+
+           data-ad-format="auto"></ins>
+
+      <script>
+
+      (adsbygoogle = window.adsbygoogle || []).push({});
+
+      </script>
+
+      <hr />
+
+      
+
+      <SCRIPT TYPE="text/javascript">
+
+
+
+        var cloud_d = [  {text:'*출처: 다음2021-12 http://rank.ezme.net', weight: 2, link: 'http://rank.ezme.net' } ];  
+
+        var cloud_n = [  {text:'*출처: 네이버2021-12 http://rank.ezme.net', weight: 2, link: 'http://rank.ezme.net' } ];  
+
+        var cloud_g = [  {text: '맨유', weight: 10, link: '@맨유'},
+
+         {text: '토트넘', weight: 9, link: '@토트넘'},
+
+         {text: '조동연', weight: 8, link: '@조동연'},
+
+         {text: '이준석', weight: 7, link: '@이준석'},
+
+         {text: '아스날', weight: 6, link: '@아스날'},
+
+         {text: 'BTS', weight: 5, link: '@BTS'},
+
+         {text: 'CGV', weight: 4, link: '@CGV'},
+
+         {text: '정국', weight: 4, link: '@정국'},
+
+         {text: '이하늬', weight: 3, link: '@이하늬'},
+
+         {text: '미세먼지', weight: 2, link: '@미세먼지'},
+
+         {text: '리버풀', weight: 1, link: '@리버풀'},
+
+         {text: '트로트', weight: 1, link: '@트로트'},
+
+         {text: 'FOMC', weight: 1, link: '@FOMC'},
+
+         {text: '송혜교', weight: 1, link: '@송혜교'},
+
+         {text: '김철민', weight: 1, link: '@김철민'},
+
+         {text: '토트넘 크리스탈 팰리스', weight: 1, link: '@토트넘 크리스탈 팰리스'},
+
+         {text: '이준석 성상납', weight: 1, link: '@이준석 성상납'},
+
+         {text: '첼시', weight: 1, link: '@첼시'},
+
+         {text: '소상공인방역지원금.kr', weight: 1, link: '@소상공인방역지원금.kr'},
+
+         {text: '김건희', weight: 1, link: '@김건희'},
+
+         {text: '동지', weight: 1, link: '@동지'},
+
+         {text: '씨랜드 화재', weight: 1, link: '@씨랜드 화재'},
+
+         {text: '거리두기', weight: 1, link: '@거리두기'},
+
+         {text: '이승우', weight: 1, link: '@이승우'},
+
+         {text: '이경규', weight: 1, link: '@이경규'},
+
+         {text: '김사니', weight: 1, link: '@김사니'},
+
+         {text: '백신패스', weight: 1, link: '@백신패스'},
+
+         {text: '김진국', weight: 1, link: '@김진국'},
+
+         {text: '챔피언스리그', weight: 1, link: '@챔피언스리그'},
+
+         {text: '장원영', weight: 1, link: '@장원영'},
+
+         {text: '송가인', weight: 1, link: '@송가인'},
+
+         {text: '펜타닐', weight: 1, link: '@펜타닐'},
+
+         {text: '칸다 사야카', weight: 1, link: '@칸다 사야카'},
+
+         {text: '조두순', weight: 1, link: '@조두순'},
+
+         {text: '조송화', weight: 1, link: '@조송화'},
+
+         {text: '이용호', weight: 1, link: '@이용호'},
+
+         {text: '신지예', weight: 1, link: '@신지예'},
+
+         {text: '이준호', weight: 1, link: '@이준호'},
+
+         {text: '최정윤', weight: 1, link: '@최정윤'},
+
+         {text: '로스트아크', weight: 1, link: '@로스트아크'},
+
+         {text:'*출처: 구글2021-12 http://rank.ezme.net', weight: 2, link: 'http://rank.ezme.net' } ];
+
+        var cloud_z = [  {text: '임영웅', weight: 10, link: '@임영웅'},
+
+         {text: '김건희', weight: 9, link: '@김건희'},
+
+         {text: '옷소매 붉은 끝동', weight: 8, link: '@옷소매 붉은 끝동'},
+
+         {text: '이준석', weight: 7, link: '@이준석'},
+
+         {text: '유재석', weight: 6, link: '@유재석'},
+
+         {text: '설강화', weight: 5, link: '@설강화'},
+
+         {text: '손흥민', weight: 4, link: '@손흥민'},
+
+         {text: '조동연', weight: 3, link: '@조동연'},
+
+         {text: '오미크론', weight: 2, link: '@오미크론'},
+
+         {text: '신사와 아가씨', weight: 1, link: '@신사와 아가씨'},
+
+         {text: '그 해 우리는', weight: 1, link: '@그 해 우리는'},
+
+         {text: '방역패스', weight: 1, link: '@방역패스'},
+
+         {text: '소상공인정책자금', weight: 1, link: '@소상공인정책자금'},
+
+         {text: '연모', weight: 1, link: '@연모'},
+
+         {text: '이재명 아들', weight: 1, link: '@이재명 아들'},
+
+         {text: '국민가수', weight: 1, link: '@국민가수'},
+
+         {text: '싱어게인2', weight: 1, link: '@싱어게인2'},
+
+         {text: '소상공인 방역지원금', weight: 1, link: '@소상공인 방역지원금'},
+
+         {text: '골 때리는 그녀들', weight: 1, link: '@골 때리는 그녀들'},
+
+         {text: '그것이 알고싶다', weight: 1, link: '@그것이 알고싶다'},
+
+         {text: '불가살', weight: 1, link: '@불가살'},
+
+         {text: '윤석열', weight: 1, link: '@윤석열'},
+
+         {text: '고요의 바다', weight: 1, link: '@고요의 바다'},
+
+         {text: '조수진', weight: 1, link: '@조수진'},
+
+         {text: '박창근', weight: 1, link: '@박창근'},
+
+         {text: '공작도시', weight: 1, link: '@공작도시'},
+
+         {text: '이하늬', weight: 1, link: '@이하늬'},
+
+         {text: '신지예', weight: 1, link: '@신지예'},
+
+         {text: '거리두기', weight: 1, link: '@거리두기'},
+
+         {text: '태종 이방원', weight: 1, link: '@태종 이방원'},
+
+         {text: '해피니스', weight: 1, link: '@해피니스'},
+
+         {text: '클루씨', weight: 1, link: '@클루씨'},
+
+         {text: '씨랜드 참사', weight: 1, link: '@씨랜드 참사'},
+
+         {text: '노재승', weight: 1, link: '@노재승'},
+
+         {text: '이승기', weight: 1, link: '@이승기'},
+
+         {text: '코로나 확진자 현황', weight: 1, link: '@코로나 확진자 현황'},
+
+         {text: '김선호', weight: 1, link: '@김선호'},
+
+         {text: '김사니', weight: 1, link: '@김사니'},
+
+         {text: '씨젠', weight: 1, link: '@씨젠'},
+
+         {text: '배드 앤 크레이지', weight: 1, link: '@배드 앤 크레이지'},
+
+         {text:'*출처: ZUM2021-12 http://rank.ezme.net', weight: 2, link: 'http://rank.ezme.net' } ];  
+
+
+
+          $('#cloud_d').jQCloud(cloud_d, {
+
+            height: 550,
+
+            delay: 50,
+
+            autoResize: true,
+
+            fontSize: {
+
+              from: 0.1,
+
+              to: 0.01
+
+          }
+
+          });
+
+          $('#cloud_n').jQCloud(cloud_n, {
+
+            height: 550,
+
+            delay: 50,
+
+            autoResize: true,
+
+            fontSize: {
+
+              from: 0.1,
+
+              to: 0.01
+
+          }
+
+          });
+
+          $('#cloud_g').jQCloud(cloud_g, {
+
+            height: 550,
+
+            delay: 50,
+
+            autoResize: true,
+
+            fontSize: {
+
+              from: 0.1,
+
+              to: 0.01
+
+          }
+
+          });
+
+           $('#cloud_z').jQCloud(cloud_g, {
+
+            height: 550,
+
+            delay: 50,
+
+            autoResize: true,
+
+            fontSize: {
+
+              from: 0.1,
+
+              to: 0.01
+
+          }
+
+          });
+
+
+
+      </SCRIPT>
+
+  
+
+
+
+
+
+   </div>
+
+
+
+  <script>
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+
+    ga('create', 'UA-63319234-1', 'auto');
+
+    ga('send', 'pageview');
+
+
+
+  </script>
+
+  
+
+  <footer class="mdl-mini-footer">
+
+    <div class="mdl-mini-footer__left-section">
+
+      ezme.net 순위기록 Ver2.3 (<a href="http://onpc.kr" target="_blank">blog</a>) <img src="css/images/email.gif" />
+
+      <b><font style='color:#47dafa;letter-spacing:-2px;'>3097</font><font style='color:#c3e355;letter-spacing:-2px;'>4149</font><font style='color:#ffa138;letter-spacing:-2px;'>3793</font></b>    </div>
+
+    
+
+    <div class="mdl-mini-footer__right-section">
+
+        <div id="google_translate_element"></div><script type="text/javascript">
+
+        function googleTranslateElementInit() {
+
+          new google.translate.TranslateElement({pageLanguage: 'ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
+
+        }
+
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+  </main>
+
+
+
+</BODY>
+
+</HTML>
